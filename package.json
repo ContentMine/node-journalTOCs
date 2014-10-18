@@ -1,6 +1,6 @@
 {
   "name": "journaltocs",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "main": "lib/journaltocs.js",
   "description": "JournalTOCs API client and cli",
   "homepage": "https://github.com/ContentMine/node-journalTOCs",
