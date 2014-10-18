@@ -1,6 +1,8 @@
 var JournalTOCs = require('../lib/journaltocs.js'),
     should = require('should');
 
+TEST_EMAIL = "richardsmith404@gmail.com";
+
 describe("JournalTOCs", function() {
 
   describe("()", function() {
@@ -22,8 +24,7 @@ describe("JournalTOCs", function() {
     });
 
     it("should fetch matching journals", function(done) {
-      var email = "richardsmith404@gmail.com";
-      var jt = new JournalTOCs(email);
+      var jt = new JournalTOCs(TEST_EMAIL);
 
       // here we search for 'bioinformatics', and we expect the
       // journal Bioinformatics (http://bioinformatics.oxfordjournals.org/)
@@ -51,8 +52,7 @@ describe("JournalTOCs", function() {
   describe(".journalDetails()", function() {
 
     it("should get details of a journal", function(done) {
-      var email = "richardsmith404@gmail.com";
-      var jt = new JournalTOCs(email);
+      var jt = new JournalTOCs(TEST_EMAIL);
 
       // here we get the details of the journal Bioinformatics using its issn
       // and expect the title to be correct.
@@ -69,8 +69,19 @@ describe("JournalTOCs", function() {
 
   describe(".journalArticles()", function() {
 
-    it("should get a list of articles from a journal", function() {
+    it("should get a list of articles from a journal", function(done) {
+      var jt = new JournalTOCs(TEST_EMAIL);
 
+      // here we get the details of the journal Bioinformatics using its issn
+      // and expect the title to be correct.
+      var fetcher = jt.journalArticles('1460-2059');
+
+      fetcher.on('result', function(results) {
+        results.forEach(function(result) {
+          result.should.have.property('dc:identifier');
+        });
+        done();
+      });
     });
 
   });
