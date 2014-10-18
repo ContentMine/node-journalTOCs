@@ -1,3 +1,19 @@
+[![NPM version](https://badge.fury.io/js/node-journalTOCs.svg)][npm]
+[![license MIT](http://b.repl.ca/v1/license-MIT-brightgreen.png)][license]
+[![Downloads](http://img.shields.io/npm/dm/node-journalTOCs.svg)][downloads]
+[![Build Status](https://secure.travis-ci.org/ContentMine/node-journalTOCs.png?branch=master)][travis]
+[![Dependency Status](https://gemnasium.com/ContentMine/node-journalTOCs.png)][gemnasium]
+[![Coverage Status](https://img.shields.io/coveralls/ContentMine/node-journalTOCs.svg)][coveralls]
+[![Code Climate](https://codeclimate.com/github/ContentMine/node-journalTOCs.png)][codeclimate]
+
+[npm]: http://badge.fury.io/js/node-journalTOCs
+[travis]: http://travis-ci.org/ContentMine/node-journalTOCs
+[coveralls]: https://coveralls.io/r/ContentMine/node-journalTOCs
+[gemnasium]: https://gemnasium.com/ContentMine/node-journalTOCs
+[license]: https://github.com/ContentMine/node-journalTOCs/blob/master/LICENSE-MIT
+[codeclimate]: https://codeclimate.com/github/ContentMine/node-journalTOCs
+[downloads]: https://nodei.co/npm/node-journalTOCs
+
 # journalTOCs [![Build Status](https://secure.travis-ci.org/ContentMine/node-journalTOCs.png?branch=master)](http://travis-ci.org/ContentMine/node-journalTOCs)
 
 > JournalTOCs API client and cli
