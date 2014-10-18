@@ -1,5 +1,6 @@
 var JournalTOCs = require('../lib/journaltocs.js'),
-    should = require('should');
+    should = require('should'),
+    EventEmitter2 = require('eventemitter2');
 
 TEST_EMAIL = "richardsmith404@gmail.com";
 
@@ -17,10 +18,10 @@ describe("JournalTOCs", function() {
 
   describe(".findJournals()", function() {
 
-    this.timeout(20000);
-
     it("should return an event emmiter", function() {
-
+      var jt = new JournalTOCs(TEST_EMAIL);
+      var fetcher = jt.findJournals('molecular');
+      fetcher.should.be.an.instanceOf(EventEmitter2);
     });
 
     it("should fetch matching journals", function(done) {
