@@ -47,6 +47,8 @@
   },
   "preferGlobal": "true",
   "dependencies": {
-    "feedparser": "~0.18.1"
+    "eventemitter2": "^0.4.14",
+    "feedparser": "~0.19.2",
+    "request": "~2.45.0"
   }
 }
