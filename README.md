@@ -4,27 +4,17 @@
 
 **NOTE** - this module is not supposed to work yet! The documentation below is a design spec.
 
-This is a very simple wrapper for the [JournalTOCs API](http://www.journaltocs.ac.uk/develop.php) that exposes methods for searching journals by keyword or user and retrieving articles by keyword or journal ISSN.
+This is a very simple wrapper for the [JournalTOCs API](http://www.journaltocs.ac.uk/develop.php) that exposes methods for searching journals by keyword or ISSN and retrieving articles by journal ISSN.
 
 ## Installation
-
-Install the module:
 
 ```sh
 $ npm install --save journaltocs
 ```
 
-Install with command-line interface:
-
-```sh
-$ npm install -g journaltocs
-$ journaltocs --help
-$ journaltocs --version
-```
-
 ## Documentation
 
-The _(Journals)_, _(Articles)_, and _(User)_ APIs are supported. The _(Institution)_ API is not supported (if you particularly want it, please open an issue requesting it).
+The _(Journals)_ API is supported. The other APIs are not supported (if you particularly want them, please open an issue requesting them).
 
 ## Examples
 
@@ -34,34 +24,42 @@ var JournalTOCs = require('journaltocs');
 var email = "your@email.com"
 var jt = new JournalTOCs(email);
 
-// get a list of the journals you follow
-jt.user(email);
 
 // find journals matching a query
-var bioinf_journals = jt.findJournals('bioinformatics');
+var query = jt.findJournals('bioinformatics');
+var bioinf_journals;
 
-// get ISSN of the first match
-var issn = bioinf_journals[0].issn;
+query.on('result', function(result) {
+  // result is an array of objects, one per journal
+  console.log(result);
+  bioinf_journals = result;
+
+  // get ISSN of the first match
+  var issn = bioinf_journals[0]['prism:issn'];
+});
+
 
 // get details of the journal
-jt.journalDetails(issn);
+query2 = jt.journalDetails('1460-2059');
+
+query2.on('result', function(result) {
+  // result is an object with details of the journal
+  console.log(result.title); // Bioinformatics
+});
 
 // get latest articles from the journal
-jt.journalArticles(issn);
+query3 = jt.journalArticles('1460-2059');
 
-// find articles by Julian Hibberd
-jt.articles(['Julian', 'Hibberd']);
+query3.on('result', function(result) {
+  // result is an array of objects, one per article
+  console.log(result[0]);
+});
 
-// find articles about snakes AND planes
-jt.articles(['snake', 'plane']);
-
-// find articles by authors from the University of Cambridge
-jt.articles("University of Cambridge");
 ```
 
 ## Contributing
 
-This is intended to be a lightweight client, so new features are unlikely to be accepted. However, bug reports are welcome.
+This is intended to be a lightweight client, so new features should be discussed first on the issue tracker. However, bug reports are welcome.
 
 
 ## License
