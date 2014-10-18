@@ -1,6 +1,6 @@
 var JournalTOCs = require('../lib/journaltocs.js'),
     should = require('should'),
-    EventEmitter2 = require('eventemitter2');
+    EventEmitter2 = require('eventemitter2').EventEmitter2;
 
 TEST_EMAIL = "richardsmith404@gmail.com";
 
@@ -52,6 +52,12 @@ describe("JournalTOCs", function() {
 
   describe(".journalDetails()", function() {
 
+    it("should return an event emmiter", function() {
+      var jt = new JournalTOCs(TEST_EMAIL);
+      var fetcher = jt.journalDetails('1533-290X');
+      fetcher.should.be.an.instanceOf(EventEmitter2);
+    });
+
     it("should get details of a journal", function(done) {
       var jt = new JournalTOCs(TEST_EMAIL);
 
@@ -70,6 +76,12 @@ describe("JournalTOCs", function() {
 
   describe(".journalArticles()", function() {
 
+    it("should return an event emmiter", function() {
+      var jt = new JournalTOCs(TEST_EMAIL);
+      var fetcher = jt.journalArticles('1533-290X');
+      fetcher.should.be.an.instanceOf(EventEmitter2);
+    });
+
     it("should get a list of articles from a journal", function(done) {
       var jt = new JournalTOCs(TEST_EMAIL);
 
@@ -87,20 +99,5 @@ describe("JournalTOCs", function() {
 
   });
 
-  describe(".articles()", function() {
-
-    it("should find articles matching a query", function() {
-
-    });
-
-  });
-
-  describe(".user()", function() {
-
-    it("should get a list of journals followed by a user", function() {
-
-    });
-
-  });
 
 });
