@@ -14,7 +14,7 @@
 [codeclimate]: https://codeclimate.com/github/ContentMine/node-journalTOCs
 [downloads]: https://nodei.co/npm/node-journalTOCs
 
-# journalTOCs [![Build Status](https://secure.travis-ci.org/ContentMine/node-journalTOCs.png?branch=master)](http://travis-ci.org/ContentMine/node-journalTOCs)
+# journalTOCs
 
 > JournalTOCs API client and cli
 
