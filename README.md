@@ -1,6 +1,6 @@
-[![NPM version](https://badge.fury.io/js/node-journalTOCs.svg)][npm]
+[![NPM version](https://badge.fury.io/js/journaltocs.svg)][npm]
 [![license MIT](http://b.repl.ca/v1/license-MIT-brightgreen.png)][license]
-[![Downloads](http://img.shields.io/npm/dm/node-journalTOCs.svg)][downloads]
+[![Downloads](http://img.shields.io/npm/dm/journaltocs.svg)][downloads]
 [![Build Status](https://secure.travis-ci.org/ContentMine/node-journalTOCs.png?branch=master)][travis]
 [![Dependency Status](https://gemnasium.com/ContentMine/node-journalTOCs.png)][gemnasium]
 [![Coverage Status](https://img.shields.io/coveralls/ContentMine/node-journalTOCs.svg)][coveralls]
