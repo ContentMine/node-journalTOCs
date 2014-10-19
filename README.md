@@ -16,7 +16,7 @@
 
 # journalTOCs
 
-> JournalTOCs API client and cli
+> JournalTOCs API client
 
 This is a very simple wrapper for the [JournalTOCs API](http://www.journaltocs.ac.uk/develop.php) that exposes methods for searching journals by keyword or ISSN and retrieving articles by journal ISSN.
 
