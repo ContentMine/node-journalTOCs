@@ -1,10 +1,10 @@
-[![NPM version](https://badge.fury.io/js/journaltocs.svg)][npm]
-[![license MIT](http://b.repl.ca/v1/license-MIT-brightgreen.png)][license]
-[![Downloads](http://img.shields.io/npm/dm/journaltocs.svg)][downloads]
-[![Build Status](https://secure.travis-ci.org/ContentMine/node-journalTOCs.png?branch=master)][travis]
-[![Dependency Status](https://gemnasium.com/ContentMine/node-journalTOCs.png)][gemnasium]
-[![Coverage Status](https://img.shields.io/coveralls/ContentMine/node-journalTOCs.svg)][coveralls]
-[![Code Climate](https://codeclimate.com/github/ContentMine/node-journalTOCs.png)][codeclimate]
+[![NPM version](http://img.shields.io/npm/v/journaltocs.svg?style=flat)][npm]
+[![license MIT](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)][license]
+[![Downloads](http://img.shields.io/npm/dm/journaltocs.svg?style=flat)][downloads]
+[![Build Status](http://img.shields.io/travis/ContentMine/node-journalTOCs.svg?style=flat)][travis]
+[![Dependency Status](http://img.shields.io/gemnasium/ContentMine/node-journalTOCs.svg?style=flat)][gemnasium]
+[![Coverage Status](https://img.shields.io/coveralls/ContentMine/node-journalTOCs.svg?style=flat)][coveralls]
+[![Code Climate](http://img.shields.io/codeclimate/github/ContentMine/node-journalTOCs.svg?style=flat)][codeclimate]
 
 [npm]: http://badge.fury.io/js/node-journalTOCs
 [travis]: http://travis-ci.org/ContentMine/node-journalTOCs
