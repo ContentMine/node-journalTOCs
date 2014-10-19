@@ -1,3 +1,7 @@
+# node-journalTOCs
+> JournalTOCs API client
+
+
 [![NPM version](http://img.shields.io/npm/v/journaltocs.svg?style=flat)][npm]
 [![license MIT](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)][license]
 [![Downloads](http://img.shields.io/npm/dm/journaltocs.svg?style=flat)][downloads]
@@ -13,10 +17,6 @@
 [license]: https://github.com/ContentMine/node-journalTOCs/blob/master/LICENSE-MIT
 [codeclimate]: https://codeclimate.com/github/ContentMine/node-journalTOCs
 [downloads]: https://nodei.co/npm/node-journalTOCs
-
-# journalTOCs
-
-> JournalTOCs API client
 
 This is a very simple wrapper for the [JournalTOCs API](http://www.journaltocs.ac.uk/develop.php) that exposes methods for searching journals by keyword or ISSN and retrieving articles by journal ISSN.
 
