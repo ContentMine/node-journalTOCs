@@ -10,13 +10,13 @@
 [![Coverage Status](https://img.shields.io/coveralls/ContentMine/node-journalTOCs.svg?style=flat)][coveralls]
 [![Code Climate](http://img.shields.io/codeclimate/github/ContentMine/node-journalTOCs.svg?style=flat)][codeclimate]
 
-[npm]: http://badge.fury.io/js/node-journalTOCs
+[npm]: https://www.npmjs.org/package/journaltocs
 [travis]: http://travis-ci.org/ContentMine/node-journalTOCs
 [coveralls]: https://coveralls.io/r/ContentMine/node-journalTOCs
 [gemnasium]: https://gemnasium.com/ContentMine/node-journalTOCs
 [license]: https://github.com/ContentMine/node-journalTOCs/blob/master/LICENSE-MIT
 [codeclimate]: https://codeclimate.com/github/ContentMine/node-journalTOCs
-[downloads]: https://nodei.co/npm/node-journalTOCs
+[downloads]: https://www.npmjs.org/package/journaltocs
 
 This is a very simple wrapper for the [JournalTOCs API](http://www.journaltocs.ac.uk/develop.php) that exposes methods for searching journals by keyword or ISSN and retrieving articles by journal ISSN.
 
