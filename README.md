@@ -18,7 +18,9 @@
 [codeclimate]: https://codeclimate.com/github/ContentMine/node-journalTOCs
 [downloads]: https://www.npmjs.org/package/journaltocs
 
-This is a very simple wrapper for the [JournalTOCs API](http://www.journaltocs.ac.uk/develop.php) that exposes methods for searching journals by keyword or ISSN and retrieving articles by journal ISSN.
+[JournalTOCs](http://www.journaltocs.ac.uk/) is a wonderful service that provides tables of contents for the latest issue of almost every academic journal.
+
+node-journalTOCs is a very simple Node.js client for the [JournalTOCs API](http://www.journaltocs.ac.uk/develop.php) that exposes methods for searching journals by keyword or ISSN and retrieving articles by journal ISSN.
 
 ## Installation
 
